@@ -51,3 +51,6 @@ With the video and tracked stones on screen (press q to quit):
 ```bash
 .venv/bin/python src/main.py configs/game6.yaml --track
 ```
+
+## Demo
+https://drive.google.com/file/d/1jWx-BgZ5ZcSU583CoNvKsyGypjsGAB1j/view?usp=drive_link
