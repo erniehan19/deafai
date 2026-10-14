@@ -1,0 +1,21 @@
+# Overhead camera: the top-center panel of the broadcast. Stones arrive from the TOP of the
+# panel, so the thrower's side ("front") is at the top, and the thrower's left is image-right.
+video: data/clips/game2.mp4
+
+# Pixel (x, y) of four spots where the twelve-foot ring crosses the center line (front, back)
+# and the tee line (left, right). An optional fifth, "button", improves the fit.
+# Pause the video on a clear view of the house and read the pixels off any image viewer.
+calibration:
+  front: [956, 10]
+  back: [956, 454]
+  left: [1178, 232]
+  right: [734, 232]
+roi: [725, 10, 475, 465]  # x, y, width, height: only look at this part of the frame
+
+# Handle colors for this broadcast, as OpenCV HSV ranges (hue 0-179): [h, s, v low, h, s, v high].
+# Saturation >= 130 keeps the pinkish painted rings from looking like red handles.
+teams:
+  red: [[0, 130, 80, 8, 255, 255], [172, 130, 80, 179, 255, 255]]
+  yellow: [[22, 130, 110, 36, 255, 255]]
+
+use_llm: false  # true: Claude rewrites each sentence (needs ANTHROPIC_API_KEY)

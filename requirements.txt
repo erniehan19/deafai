@@ -1,0 +1,6 @@
+# Python 3.10 or newer
+anthropic>=1.13  # only used when a clip's config has use_llm: true
+numpy
+opencv-python
+pyyaml
+scipy

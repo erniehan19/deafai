@@ -1,0 +1,20 @@
+# Overhead camera: the bottom-center panel of the broadcast (Henderson logo house).
+# Stones arrive from the TOP of the panel, so "front" is at the top and the thrower's left is image-right.
+# Clip: youtube.com/watch?v=JTIDg9aVHCc, 45:09 to 45:18.
+video: data/clips/game5.mp4
+
+calibration:  # see game2.yaml for what these points are
+  front: [961, 643]
+  back: [961, 1071]
+  left: [1174, 857]
+  right: [748, 857]
+  button: [961, 857]
+roi: [728, 604, 466, 466]  # x, y, width, height
+
+# This game throws blue and yellow stones.
+# Blue hue 115+ keeps the painted blue logo ring (hue ~105) from looking like handles.
+teams:
+  blue: [[115, 50, 30, 130, 255, 150]]
+  yellow: [[22, 130, 110, 36, 255, 255]]
+
+use_llm: false

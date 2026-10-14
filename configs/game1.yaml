@@ -1,0 +1,12 @@
+# Overhead camera: the right panel of the broadcast's split screen. The thrower is at the
+# bottom of the picture, so "front" (the thrower's side) is the bottom of the rings.
+video: data/clips/game1.mp4
+
+calibration:  # see game2.yaml for what these points are
+  front: [1585, 913]
+  back: [1585, 323]
+  left: [1287, 618]
+  right: [1883, 618]
+roi: [1237, 0, 683, 1080]
+
+use_llm: false
